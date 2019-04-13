@@ -1,0 +1,237 @@
+,0
+0,"0    0.0
+Name: 132, dtype: float64"
+1,"0    0.0
+Name: 1538, dtype: float64"
+2,"0    0.0
+Name: 1880, dtype: float64"
+3,1.0
+4,"0    0.0
+Name: 1194, dtype: float64"
+5,"0    0.0
+Name: 57, dtype: float64"
+6,"0    0.0
+Name: 2003, dtype: float64"
+7,"0    0.0
+Name: 83, dtype: float64"
+8,"0    0.0
+Name: 1807, dtype: float64"
+9,"0    0.0
+Name: 1510, dtype: float64"
+10,"0    0.0
+Name: 1025, dtype: float64"
+11,1.0
+12,"0    0.0
+Name: 2212, dtype: float64"
+13,"0    0.0
+Name: 2056, dtype: float64"
+14,"0    0.0
+Name: 1417, dtype: float64"
+15,"0    0.0
+Name: 868, dtype: float64"
+16,"0    0.0
+Name: 1590, dtype: float64"
+17,"0    0.0
+Name: 790, dtype: float64"
+18,1.0
+19,"0    0.0
+Name: 1080, dtype: float64"
+20,1.0
+21,1.0
+22,"0    0.0
+Name: 33, dtype: float64"
+23,"0    0.0
+Name: 1487, dtype: float64"
+24,"0    0.0
+Name: 552, dtype: float64"
+25,"0    1.0
+Name: 970, dtype: float64"
+26,"0    0.0
+Name: 1467, dtype: float64"
+27,"0    0.0
+Name: 1926, dtype: float64"
+28,"0    0.0
+Name: 504, dtype: float64"
+29,"0    0.0
+Name: 847, dtype: float64"
+30,1.0
+31,"0    0.0
+Name: 112, dtype: float64"
+32,"0    0.0
+Name: 677, dtype: float64"
+33,"0    0.0
+Name: 2237, dtype: float64"
+34,1.0
+35,"0    1.0
+Name: 603, dtype: float64"
+36,"0    0.0
+Name: 1442, dtype: float64"
+37,"0    0.0
+Name: 1223, dtype: float64"
+38,1.0
+39,"0    0.0
+Name: 1244, dtype: float64"
+40,"0    0.0
+Name: 576, dtype: float64"
+41,1.0
+42,1.0
+43,1.0
+44,"0    0.0
+Name: 818, dtype: float64"
+45,"0    0.0
+Name: 1695, dtype: float64"
+46,"0    0.0
+Name: 1980, dtype: float64"
+47,1.0
+48,"0    0.0
+Name: 474, dtype: float64"
+49,1.0
+50,1.0
+51,1.0
+52,1.0
+53,"0    0.0
+Name: 1321, dtype: float64"
+54,"0    0.0
+Name: 13, dtype: float64"
+55,1.0
+56,"0    0.0
+Name: 1269, dtype: float64"
+57,1.0
+58,"0    0.0
+Name: 1129, dtype: float64"
+59,"0    0.0
+Name: 2182, dtype: float64"
+60,1.0
+61,1.0
+62,1.0
+63,1.0
+64,"0    0.0
+Name: 428, dtype: float64"
+65,1.0
+66,1.0
+67,1.0
+68,1.0
+69,1.0
+70,1.0
+71,"0    0.0
+Name: 941, dtype: float64"
+72,"0    0.0
+Name: 1779, dtype: float64"
+73,1.0
+74,1.0
+75,"0    0.0
+Name: 914, dtype: float64"
+76,1.0
+77,1.0
+78,"0    0.0
+Name: 1172, dtype: float64"
+79,"0    0.0
+Name: 1616, dtype: float64"
+80,"0    0.0
+Name: 1641, dtype: float64"
+81,"0    0.0
+Name: 889, dtype: float64"
+82,"0    0.0
+Name: 1100, dtype: float64"
+83,1.0
+84,"0    0.0
+Name: 453, dtype: float64"
+85,"0    0.0
+Name: 2031, dtype: float64"
+86,1.0
+87,1.0
+88,"0    0.0
+Name: 361, dtype: float64"
+89,"0    0.0
+Name: 1054, dtype: float64"
+90,"0    0.0
+Name: 2110, dtype: float64"
+91,"0    0.0
+Name: 261, dtype: float64"
+92,"0    0.0
+Name: 1858, dtype: float64"
+93,"0    0.0
+Name: 720, dtype: float64"
+94,"0    0.0
+Name: 1668, dtype: float64"
+95,"0    0.0
+Name: 625, dtype: float64"
+96,1.0
+97,"0    0.0
+Name: 997, dtype: float64"
+98,1.0
+99,"0    0.0
+Name: 152, dtype: float64"
+100,"0    0.0
+Name: 2266, dtype: float64"
+101,1.0
+102,"0    0.0
+Name: 312, dtype: float64"
+103,1.0
+104,"0    0.0
+Name: 381, dtype: float64"
+105,1.0
+106,"0    0.0
+Name: 332, dtype: float64"
+107,"0    0.0
+Name: 2134, dtype: float64"
+108,"0    0.0
+Name: 525, dtype: float64"
+109,1.0
+110,"0    0.0
+Name: 766, dtype: float64"
+111,1.0
+112,1.0
+113,1.0
+114,1.0
+115,"0    0.0
+Name: 2158, dtype: float64"
+116,1.0
+117,"0    0.0
+Name: 740, dtype: float64"
+118,1.0
+119,"0    0.0
+Name: 1725, dtype: float64"
+120,"0    0.0
+Name: 1152, dtype: float64"
+121,"0    0.0
+Name: 1397, dtype: float64"
+122,"0    0.0
+Name: 206, dtype: float64"
+123,"0    0.0
+Name: 1561, dtype: float64"
+124,"0    0.0
+Name: 1374, dtype: float64"
+125,"0    0.0
+Name: 2082, dtype: float64"
+126,"0    0.0
+Name: 182, dtype: float64"
+127,"0    1.0
+Name: 404, dtype: float64"
+128,"0    0.0
+Name: 653, dtype: float64"
+129,1.0
+130,1.0
+131,"0    0.0
+Name: 1953, dtype: float64"
+132,"0    0.0
+Name: 234, dtype: float64"
+133,"0    0.0
+Name: 291, dtype: float64"
+134,1.0
+135,"0    0.0
+Name: 1292, dtype: float64"
+136,1.0
+137,"0    0.0
+Name: 1755, dtype: float64"
+138,"0    0.0
+Name: 700, dtype: float64"
+139,1.0
+140,"0    0.0
+Name: 1344, dtype: float64"
+141,"0    0.0
+Name: 1902, dtype: float64"
+142,"0    0.0
+Name: 1832, dtype: float64"
+143,1.0
+144,1.0
