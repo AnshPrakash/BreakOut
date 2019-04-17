@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import matplotlib
-import random 
+import random
 
 def selectSample(l,n):
 	random.shuffle(l)
@@ -25,8 +25,10 @@ def imageStacked(imglist):
 
 def getRewardedSample(indices,df):
 	samples = []
-	idxStart = indices - 9 +1 #all are one shifted
+	idxStart = indices - 7 +1 #all are one shifted
 	for idx in idxStart:
+		# l = [i +idx for i in range(7)]
+		# l = selectSample(l,5)
 		l = [i +idx for i in range(6)]
 		l = selectSample(l,4)
 		l.append(idx + 6)
@@ -41,10 +43,12 @@ def getRandomSamples(df):
 	start = int(np.random.rand()*10) + 1
 	stride = 0
 	while start < (len(df)-8):
-		l = [1,2,3,4,5]
-		img = [str(start+s).zfill(5)+".png" for s in ([0] + selectSample(l,3) + [6])] 
+		# l = [1,2,3,4,5,6]
+		# img = [str(start+s).zfill(5)+".png" for s in ([0] + selectSample(l,4))] 
+		l = [0,1,2,3,4,5]
+		img = [str(start+s).zfill(5)+".png" for s in (selectSample(l,4) + [6])] 
 		temp = imageStacked(img)
-		samples.append((temp,df.iloc[start + 8]))
+		samples.append((temp,df.iloc[start + 6,-1]))
 		stride = random.randint(20,30)
 		start += stride
 	return(samples)
@@ -91,7 +95,6 @@ for folder in folders:
 	del data
 	del labels
 	labels_df.to_csv(folder+"_labels.csv")
-	# print(labels_df)
 	print(len(labels_df))
 	del labels_df
 	os.chdir(currdir)
