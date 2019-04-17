@@ -14,14 +14,15 @@ def selectSample(l,n):
 
 
 def imageStacked(imglist):
-	img_array = [cv2.imread(x,cv2.IMREAD_GRAYSCALE) for x in imglist]
+	img_array = [cv2.imread(x) for x in imglist]
 	temp = img_array[0]
-	temp = temp[20:-15]
+	temp = temp
 	for img in img_array[1:]:
 		# tp =img[20:-15]
 		# print(tp.shape)
-		temp = np.vstack((temp,img[20:-15]))
-	return(temp.ravel())
+		temp = np.vstack((temp,img))
+	temp = temp.ravel()
+	return(temp)
 
 def getRewardedSample(indices,df):
 	samples = []
@@ -89,8 +90,11 @@ for folder in folders:
 	for i in range(len(samples)):
 		data[i]   = (samples[i][0])
 		labels[i] = (samples[i][1])
+	# print(len(samples))
 	del samples
-	matplotlib.image.imsave(folder + '_data.png', np.array(data))
+	data = np.array(data)
+	# print(data.shape)
+	matplotlib.image.imsave(folder + '_data.png', data)
 	labels_df = pd.DataFrame(np.array(labels))
 	del data
 	del labels
