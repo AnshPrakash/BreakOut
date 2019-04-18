@@ -20,7 +20,7 @@ def getRewardedSample(indices,data):
 		l = selectSample(l,4)
 		l.append(idx + 6)
 		l = np.array(l) 
-		fseq = np.array(data.iloc[l+1]).reshape(1,-1)
+		fseq = np.array(data.iloc[l+1]).reshape(-1)
 		samples.append((fseq,1.0))
 	return(samples)
 
@@ -79,6 +79,7 @@ final_labels = np.array(final_labels)
 
 data_df = pd.DataFrame(final_data)
 labels_df = pd.DataFrame(final_labels)
+print("Writing to Disk ... ")
 data_df.to_csv("FINAL_data.csv")
 labels_df.to_csv("FINAL_labels.csv")
 
