@@ -40,7 +40,7 @@ def getRandomSamples(labels,data):
 	return(samples)
 
 
-
+# os.chdir("/home/cse/btech/cs1160367/home/ML_Assign4") ##for hpc
 
 try:
 	os.mkdir("SVMInput")

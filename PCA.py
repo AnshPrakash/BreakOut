@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import shutil
 import cv2
+import pickle
 
 
 os.chdir('RawData')
@@ -14,13 +15,14 @@ currdir =os.getcwd()
 l = []
 img_array =[]
 
-for folder in folders:
+for folder in folders[:50]:
 	os.chdir(folder)
-	# files = list(filter(os.path.isfile, os.listdir('.')))
-	# files.sort()
+	files = list(filter(os.path.isfile, os.listdir('.')))
+	files.sort()
 	# csv_file = files[-1]
 	# del files[-1]
-	imglist = [str(idx).zfill(5)+".png" for idx in range(0,50)]
+	# imglist = [str(idx).zfill(5)+".png" for idx in range(0,50)]
+	imglist = [file for file in files if file.endswith(".png")]
 	images = [cv2.imread(x,cv2.IMREAD_GRAYSCALE) for x in imglist]
 	img_array = img_array + [x.ravel() for x in images]
 	os.chdir(currdir)
@@ -29,12 +31,15 @@ for folder in folders:
 # print(img_array)
 train_data = np.array(img_array)
 
-# train_data = train_data[:100]
 print("Processing Done")
 
 
 pca = PCA(n_components=50)
 pca.fit(train_data)
+
+
+pickle.dump(pca,open( "../pca.p", "wb" ))
+
 
 # transformed = pca.transform(train_data)
 
@@ -42,11 +47,11 @@ pca.fit(train_data)
 os.chdir(currdir)
 os.chdir("..")
 try:
-	os.mkdir("SVMData")
+	os.mkdir("PCA_Out")
 except Exception as e:
 	print(e)
 
-save_data =  os.getcwd()+"/SVMData"
+save_data =  os.getcwd()+"/PCA_Out"
 
 print(save_data)
 os.chdir(currdir)
